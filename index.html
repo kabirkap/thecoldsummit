@@ -3112,38 +3112,102 @@ padding-top: 8px;
 </span></div>
   </div></scrolling-banner>
 
-
 </div><div id="shopify-section-template--23897351192889__pagefly_section_gp86pP" class="shopify-section">
 
   <!-- PageFlyGlobalSection -->
-  
-  
+
   <script>
     window.addEventListener('load', () => {
-      // fallback for gtag when not initialized
-      if(typeof window.gtag !== 'function') {
-        window.gtag = (str1, str2, obj) => {
-        }
+      // Ensure gtag is defined before usage
+      if (typeof window.gtag !== 'function') {
+        window.gtag = (event, action, params) => {
+          console.warn('gtag fallback: Event not tracked.', { event, action, params });
+        };
       }
-    }) 
+    });
   </script>
-  
-  <style>.__pf .pf-c-ct,.__pf .pf-c-lt,.__pf .pf-c-rt{align-content:flex-start}.__pf .oh,.pf-sr-only{overflow:hidden}.__pf .pf-ifr,.pf-no-border,.pf-sr-only{border:0}.__pf img,.__pf video{max-width:100%;border:0;vertical-align:middle}.__pf [tabIndex],.__pf button,.__pf input,.__pf select,.__pf textarea{touch-action:manipulation}.__pf :focus-visible{outline:0!important;box-shadow:none!important}.__pf :not(input):not(select):not(textarea):focus-visible{border:none!important}.__pf *,.__pf :after,.__pf :before{box-sizing:border-box}.__pf [disabled],.__pf [readonly]{cursor:default}.__pf [data-href],.__pf button:not([data-pf-id]):hover{cursor:pointer}.__pf [disabled]:not([disabled=false]){pointer-events:none}.__pf [hidden]{display:none!important}.__pf [data-link=inherit]{color:inherit;text-decoration:none}.__pf [data-pf-placeholder]{outline:0;height:auto;display:none;pointer-events:none!important}.__pf .pf-ifr,.__pf [style*="--ratio"] img{height:100%;left:0;top:0;width:100%;position:absolute}.__pf .pf-r,.__pf .pf-r-eh>.pf-c{display:flex}.__pf [style*="--cw"]{padding:0 15px;width:100%;margin:auto;max-width:var(--cw)}.__pf .pf-bg-lazy{background-image:none!important}.__pf .pf-r{flex-wrap:wrap}.__pf .pf-r-dg{display:grid}.__pf [style*="--c-xs"]{max-width:calc(100%/12*var(--c-xs));flex-basis:calc(100%/12*var(--c-xs))}.__pf [style*="--s-xs"]{margin:0 calc(-1 * var(--s-xs))}.__pf [style*="--s-xs"]>.pf-c{padding:var(--s-xs)}.__pf .pf-r-ew>.pf-c{flex-grow:1;flex-basis:0}.__pf [style*="--ew-xs"]>.pf-c{flex-basis:calc(100% / var(--ew-xs));max-width:calc(100% / var(--ew-xs))}.__pf [style*="--ratio"]{position:relative;padding-bottom:var(--ratio)}.main-content{padding:0}.footer-section,.site-footer,.site-footer-wrapper,main .accent-background+.shopify-section{margin:0}@media (max-width:767.4999px){.__pf .pf-hide{display:none!important}}@media (max-width:1024.4999px) and (min-width:767.5px){.__pf .pf-sm-hide{display:none!important}}@media (max-width:1199.4999px) and (min-width:1024.5px){.__pf .pf-md-hide{display:none!important}}@media (min-width:767.5px){.__pf [style*="--s-sm"]{margin:0 calc(-1 * var(--s-sm))}.__pf [style*="--c-sm"]{max-width:calc(100%/12*var(--c-sm));flex-basis:calc(100%/12*var(--c-sm))}.__pf [style*="--s-sm"]>.pf-c{padding:var(--s-sm)}.__pf [style*="--ew-sm"]>.pf-c{flex-basis:calc(100% / var(--ew-sm));max-width:calc(100% / var(--ew-sm))}}@media (min-width:1024.5px){.__pf [style*="--s-md"]{margin:0 calc(-1 * var(--s-md))}.__pf [style*="--c-md"]{max-width:calc(100%/12*var(--c-md));flex-basis:calc(100%/12*var(--c-md))}.__pf [style*="--s-md"]>.pf-c{padding:var(--s-md)}.__pf [style*="--ew-md"]>.pf-c{flex-basis:calc(100% / var(--ew-md));max-width:calc(100% / var(--ew-md))}}@media (min-width:1199.5px){.__pf [style*="--s-lg"]{margin:0 calc(-1 * var(--s-lg))}.__pf [style*="--c-lg"]{max-width:calc(100%/12*var(--c-lg));flex-basis:calc(100%/12*var(--c-lg))}.__pf [style*="--s-lg"]>.pf-c{padding:var(--s-lg)}.__pf [style*="--ew-lg"]>.pf-c{flex-basis:calc(100% / var(--ew-lg));max-width:calc(100% / var(--ew-lg))}.__pf .pf-lg-hide{display:none!important}}.__pf .pf-r-eh>.pf-c>div{width:100%}.__pf .pf-c-lt{justify-content:flex-start;align-items:flex-start}.__pf .pf-c-ct{justify-content:center;align-items:flex-start}.__pf .pf-c-rt{justify-content:flex-end;align-items:flex-start}.__pf .pf-c-lm{justify-content:flex-start;align-items:center;align-content:center}.__pf .pf-c-cm{justify-content:center;align-items:center;align-content:center}.__pf .pf-c-rm{justify-content:flex-end;align-items:center;align-content:center}.__pf .pf-c-cb,.__pf .pf-c-lb,.__pf .pf-c-rb{align-content:flex-end}.__pf .pf-c-lb{justify-content:flex-start;align-items:flex-end}.__pf .pf-c-cb{justify-content:center;align-items:flex-end}.__pf .pf-c-rb{justify-content:flex-end;align-items:flex-end}.pf-sr-only{position:absolute;width:1px;height:1px;padding:0;clip:rect(0,0,0,0);white-space:nowrap;clip-path:inset(50%)}.pf-visibility-hidden{visibility:hidden}</style>
-<style></style>
-<style>.pf-color-scheme-1,.pf-color-scheme-2{--pf-scheme-btn-text-color:rgb(255, 255, 255);background-color:var(--pf-scheme-bg-color);background-image:var(--pf-scheme-bg-gradient-color);border-color:var(--pf-scheme-border-color);color:var(--pf-scheme-text-color)}.pf-color-scheme-1{--pf-scheme-bg-color:rgba(255, 255, 255, 0);--pf-scheme-text-color:rgb(0, 0, 0);--pf-scheme-btn-bg-color:rgb(145, 157, 169);--pf-scheme-border-color:rgba(0, 0, 0);--pf-scheme-shadow-color:rgb(0, 0, 0, 0.25)}.pf-color-scheme-2,.pf-color-scheme-3{--pf-scheme-text-color:rgb(18, 18, 18);--pf-scheme-btn-bg-color:rgb(18, 18, 18);--pf-scheme-border-color:rgb(18, 18, 18)}.pf-color-scheme-2{--pf-scheme-bg-color:rgb(255, 255, 255);--pf-scheme-shadow-color:rgb(18, 18, 18)}.pf-color-scheme-3{--pf-scheme-bg-color:rgb(243, 243, 243);--pf-scheme-btn-text-color:rgb(243, 243, 243);--pf-scheme-shadow-color:rgb(18, 18, 18);background-color:var(--pf-scheme-bg-color);background-image:var(--pf-scheme-bg-gradient-color);border-color:var(--pf-scheme-border-color);color:var(--pf-scheme-text-color)}.pf-color-scheme-4,.pf-color-scheme-5,.pf-color-scheme-6{--pf-scheme-text-color:rgb(255, 255, 255);--pf-scheme-btn-bg-color:rgb(255, 255, 255);--pf-scheme-border-color:rgb(255, 255, 255);--pf-scheme-shadow-color:rgb(18, 18, 18);background-color:var(--pf-scheme-bg-color);background-image:var(--pf-scheme-bg-gradient-color);border-color:var(--pf-scheme-border-color);color:var(--pf-scheme-text-color)}.pf-color-scheme-4{--pf-scheme-bg-color:rgb(36, 40, 51);--pf-scheme-btn-text-color:rgb(0, 0, 0)}.pf-color-scheme-5{--pf-scheme-bg-color:rgb(18, 18, 18);--pf-scheme-btn-text-color:rgb(18, 18, 18)}.pf-color-scheme-6{--pf-scheme-bg-color:rgb(51, 79, 180);--pf-scheme-btn-text-color:rgb(51, 79, 180)}[data-pf-type^=Button]{background-color:var(--pf-scheme-btn-bg-color);background-image:var(--pf-scheme-btn-bg-gradient-color);color:var(--pf-scheme-btn-text-color)}@media all{.__pf .pf-field-1,.__pf .pf-field-2,.__pf .pf-field-3,.__pf .pf-field-4,.__pf .pf-field-5,.__pf .pf-field-6{background-color:#fdfdfd;border:.66px solid #8a8a8a;border-radius:8px;padding:6px 12px}}</style>
-<link rel="stylesheet" href="cdn/shop/t/4/assets/pagefly-animation%EF%B9%96v=35569424405882025761734517422.css" media="print" onload="this.media='all'">
-  
 
-<link rel="stylesheet" data-pf-font="google" href="../fonts.googleapis.com/css2%EF%B9%96family=Jost%EF%B9%95wght@400&amp;display=swap.css" media="all">
+  <style>
+    .__pf .pf-c-ct, .__pf .pf-c-lt, .__pf .pf-c-rt {
+      align-content: flex-start;
+    }
+    .__pf .oh, .pf-sr-only {
+      overflow: hidden;
+    }
+    .__pf img, .__pf video {
+      max-width: 100%;
+      border: 0;
+      vertical-align: middle;
+    }
+    .__pf [tabIndex], .__pf button, .__pf input, .__pf select, .__pf textarea {
+      touch-action: manipulation;
+    }
+    .__pf :focus-visible {
+      outline: none !important;
+      box-shadow: none !important;
+    }
+    .__pf *, .__pf :after, .__pf :before {
+      box-sizing: border-box;
+    }
+    .__pf [disabled], .__pf [readonly] {
+      cursor: not-allowed;
+    }
+    .__pf [data-href], .__pf button:not([data-pf-id]):hover {
+      cursor: pointer;
+    }
+    .__pf [hidden] {
+      display: none !important;
+    }
+    .__pf [data-pf-placeholder] {
+      outline: none;
+      height: auto;
+      display: none;
+      pointer-events: none !important;
+    }
+    .main-content {
+      padding: 0;
+    }
+    .footer-section, .site-footer, .site-footer-wrapper, main .accent-background+.shopify-section {
+      margin: 0;
+    }
+    @media (max-width: 767.4999px) {
+      .__pf .pf-hide {
+        display: none !important;
+      }
+    }
+    /* Custom PageFly Enhancements */
+    .custom-heading {
+      font-family: "Jost", sans-serif;
+      font-size: 36px;
+      text-align: center;
+      font-weight: bold;
+      color: #000;
+    }
+    .custom-border-box {
+      border: 1px solid #000;
+      border-radius: 10px;
+      padding: 15px;
+      background-color: rgba(0, 0, 0, 0);
+    }
+    .custom-section {
+      background-color: #fff;
+      border-radius: 15px;
+      padding: 20px;
+      margin: 10px auto;
+    }
+  </style>
 
+  <link rel="stylesheet" href="cdn/shop/t/4/assets/pagefly-animation?v=35569424405882025761734517422.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" data-pf-font="google" href="../fonts.googleapis.com/css2?family=Jost:wght@400&display=swap" media="all">
 
-<style>.gUmbDa,.gjNMyZ{position:relative}.fLvWek{--pf-sample-color:#5d6b82;--pf-border-color:#d1d5db}.fXrIOS{white-space:pre-line;user-select:text}.iOjmJ{word-break:break-word}.gUmbDa:empty{display:initial}.gjNMyZ{padding:20px 0}.cyLkkD.pf-r-eh{align-items:stretch!important}.koQWfm{width:100%;height:100%}@media all{.__pf.__pf_FYWtv6Xn .pf-8b2649029fb8-5_{padding-top:0;padding-bottom:0;border-style:none;background-color:rgba(0,0,0,0);margin-top:10px}.__pf.__pf_FYWtv6Xn .pf-8b2649029fb8-6_{margin-bottom:19px}.__pf.__pf_FYWtv6Xn .pf-8b2649029fb8-7_{text-align:center}.__pf.__pf_FYWtv6Xn .pf-8b2649029fb8-8_{color:#000;margin-top:0;margin-bottom:0;font-family:Jost;font-size:36px;line-height:1.5em;text-transform:capitalize;border:1px solid #000;border-radius:10px;background-color:rgba(0,0,0,0);font-weight:700}.__pf.__pf_FYWtv6Xn .rid-8b2649029fb8-142{padding:401px 16px 1px;background-image:URL("../cdn.shopify.com/s/files/1/0653/3821/2508/files/WhatsApp_Image_2024-12-16_at_03.23.08.jpg?v=1737523551");border-radius:15px;background-position:center center;background-size:cover}.__pf.__pf_FYWtv6Xn .rid-8b2649029fb8-140{padding:15px 12px 12px;border:2px solid #10a4b9;border-radius:15px;background-color:#fff}.__pf.__pf_FYWtv6Xn .pf-8b2649029fb8-23_,.__pf.__pf_FYWtv6Xn .pf-8b2649029fb8-30_,.__pf.__pf_FYWtv6Xn .pf-8b2649029fb8-37_,.__pf.__pf_FYWtv6Xn .pf-8b2649029fb8-44_,.__pf.__pf_FYWtv6Xn .pf-8b2649029fb8-51_,.__pf.__pf_FYWtv6Xn .rid-8b2649029fb8-137{color:#10a4b9;margin-top:0;margin-bottom:8px;font-family:Jost;font-weight:700;line-height:1.5em;font-size:20px}.__pf.__pf_FYWtv6Xn .pf-8b2649029fb8-25_,.__pf.__pf_FYWtv6Xn .pf-8b2649029fb8-32_,.__pf.__pf_FYWtv6Xn .pf-8b2649029fb8-39_,.__pf.__pf_FYWtv6Xn .pf-8b2649029fb8-46_,.__pf.__pf_FYWtv6Xn .pf-8b2649029fb8-53_,.__pf.__pf_FYWtv6Xn .rid-8b2649029fb8-139{color:#8b8b8b;margin-top:0;margin-bottom:0;font-family:Jost;font-weight:400;font-size:16px;line-height:1.5em}.__pf.__pf_FYWtv6Xn .pf-8b2649029fb8-20_{padding:323px 16px 1px;background-image:URL("../cdn.shopify.com/s/files/1/0653/3821/2508/files/WhatsApp_Image_2024-12-16_at_03.23.08.jpg?v=1737523551");border-radius:15px;background-size:cover;background-position:center center}.__pf.__pf_FYWtv6Xn .pf-8b2649029fb8-21_{margin-top:0}.__pf.__pf_FYWtv6Xn .pf-8b2649029fb8-22_,.__pf.__pf_FYWtv6Xn .pf-8b2649029fb8-29_,.__pf.__pf_FYWtv6Xn .pf-8b2649029fb8-36_,.__pf.__pf_FYWtv6Xn .pf-8b2649029fb8-43_,.__pf.__pf_FYWtv6Xn .pf-8b2649029fb8-50_{padding:12px;border:2px solid #10a4b9;border-radius:15px;background-color:#fff}.__pf.__pf_FYWtv6Xn .pf-8b2649029fb8-27_,.__pf.__pf_FYWtv6Xn .pf-8b2649029fb8-34_,.__pf.__pf_FYWtv6Xn .pf-8b2649029fb8-41_,.__pf.__pf_FYWtv6Xn .pf-8b2649029fb8-48_{border-radius:15px;background-position:center center;background-size:cover}.__pf.__pf_FYWtv6Xn .pf-8b2649029fb8-27_{padding:387px 16px 1px;background-image:URL("../cdn.shopify.com/s/files/1/0653/3821/2508/files/WhatsApp_Image_2024-12-16_at_03.23.08.jpg?v=1737523551")}.__pf.__pf_FYWtv6Xn .pf-8b2649029fb8-34_{padding:295px 16px 1px;background-image:URL("../cdn.shopify.com/s/files/1/0653/3821/2508/files/WhatsApp_Image_2024-12-16_at_03.23.08.jpg?v=1737523551")}.__pf.__pf_FYWtv6Xn .pf-8b2649029fb8-41_{padding:327px 16px 1px;background-image:url("cdn/shop/files/IMG_3913_2.heic")}.__pf.__pf_FYWtv6Xn .pf-8b2649029fb8-48_{padding:270px 16px 1px;background-image:URL("../cdn.shopify.com/s/files/1/0653/3821/2508/files/WhatsApp_Image_2024-12-16_at_03.23.08.jpg?v=1737523551")}}@media (max-width:767.4999px){.__pf.__pf_FYWtv6Xn .pf-8b2649029fb8-8_{font-size:28px}.__pf.__pf_FYWtv6Xn .pf-8b2649029fb8-6_{margin-bottom:3px}.__pf.__pf_FYWtv6Xn .pf-8b2649029fb8-23_,.__pf.__pf_FYWtv6Xn .pf-8b2649029fb8-30_,.__pf.__pf_FYWtv6Xn .pf-8b2649029fb8-37_,.__pf.__pf_FYWtv6Xn .pf-8b2649029fb8-44_,.__pf.__pf_FYWtv6Xn .pf-8b2649029fb8-51_,.__pf.__pf_FYWtv6Xn .rid-8b2649029fb8-137{font-size:16px}.__pf.__pf_FYWtv6Xn .pf-8b2649029fb8-25_,.__pf.__pf_FYWtv6Xn .pf-8b2649029fb8-32_,.__pf.__pf_FYWtv6Xn .pf-8b2649029fb8-39_,.__pf.__pf_FYWtv6Xn .pf-8b2649029fb8-46_,.__pf.__pf_FYWtv6Xn .pf-8b2649029fb8-53_,.__pf.__pf_FYWtv6Xn .rid-8b2649029fb8-139{font-size:14px}.__pf.__pf_FYWtv6Xn .pf-8b2649029fb8-5_{padding-top:57px;padding-bottom:42px}}</style>
-<div class="sc-esYjtY fLvWek __pf __pf_FYWtv6Xn"><div data-section-id="pf-a5e7" data-category="Generic content" data-name="Awesome" data-pf-type="Section" class="sc-dxcExB gjNMyZ pf-8b2649029fb8-5_ pf-color-scheme-1"><div style="--cw:1170px" class="sc-kqGpvY OSjcf"><div class="sc-jXbVAB kNtuek pf-8b2649029fb8-6_ pf-r pf-r-eh" style="--s-xs:15px" data-pf-type="Row"><div class="pf-c" style="--c-xs:12;--c-sm:12;--c-md:12;--c-lg:12"><div data-pf-type="Column" class="sc-lnPyOc gUmbDa pf-8b2649029fb8-7_"><h3 data-pf-type="Heading2" class="sc-cmaqZA fXrIOS pf-8b2649029fb8-8_ pf-heading-1-h3"><strong>Meet our Dream team</strong></h3></div></div></div><div class="sc-jXbVAB kNtuek pf-8b2649029fb8-10_ pf-r pf-r-eh" style="--s-xs:15px" data-pf-type="Row"><div class="pf-c" style="--c-xs:12;--c-sm:12;--c-md:12;--c-lg:12"><div data-pf-type="Column" class="sc-lnPyOc gUmbDa pf-8b2649029fb8-11_"><div class="sc-dgtNHC cyLkkD pf-8b2649029fb8-12_ pf-r pf-r-ew pf-c-rt pf-r-eh" style="--s-xs:15px;--ew-xs:1;--ew-sm:2;--ew-md:3" data-pf-type="ContentList"><div class="pf-c"><div data-pf-type="ContentListItem" class="sc-dFfGgx koQWfm rid-8b2649029fb8-142 pf-bg-lazy"><div class="sc-jXbVAB kNtuek rid-8b2649029fb8-141 pf-r pf-r-eh" style="--s-xs:15px" data-pf-type="Row"><div class="pf-c" style="--c-xs:12;--c-sm:12;--c-md:12;--c-lg:12"><div data-pf-type="Column" class="sc-lnPyOc gUmbDa rid-8b2649029fb8-140"><h3 data-pf-type="Heading2" class="sc-cmaqZA fXrIOS rid-8b2649029fb8-137 pf-heading-1-h3">Paris Qian</h3><p class="sc-kAkozD iOjmJ rid-8b2649029fb8-139 pf-text-1" data-pf-type="Paragraph3">Paris is a Breathwork facilitator who transforms emotional barriers through rhythmic breath, music, and mindful movement, empowering individuals to unlock their inner potential and celebrate their authentic selves. She is widely&nbsp;regarded as one of Toronto's best breathwork facilitators.<br><br><b>IG</b>: <a href="https://www.instagram.com/rhythm_with_paris/" target="_self">@rhythm_with_paris</a></p></div></div></div></div></div><div class="pf-c"><div data-pf-type="ContentListItem" class="sc-dFfGgx koQWfm pf-8b2649029fb8-20_ pf-bg-lazy"><div class="sc-jXbVAB kNtuek pf-8b2649029fb8-21_ pf-r pf-r-eh" style="--s-xs:15px" data-pf-type="Row"><div class="pf-c" style="--c-xs:12;--c-sm:12;--c-md:12;--c-lg:12"><div data-pf-type="Column" class="sc-lnPyOc gUmbDa pf-8b2649029fb8-22_"><h3 data-pf-type="Heading2" class="sc-cmaqZA fXrIOS pf-8b2649029fb8-23_ pf-heading-1-h3">Kabir Kapoor</h3><p class="sc-kAkozD iOjmJ pf-8b2649029fb8-25_ pf-text-1" data-pf-type="Paragraph3">Kabir Kapoor is a community leader, public speaker, singer-songwriter, traveler, and the founder of Toronto's most active community: Yes Toronto. He also currently works as a Community Rep for the world-famous clothing brand <strong>Seek Discomfort</strong>. He is by far the most fearless cold plunger you will ever run into. Don't (Do) let him convince you to partake in extreme cold plunge challenges. Nevertheless, Kabir has guided thousands of people around the world through their first cold plunge.&nbsp;<br><br><strong>IG</strong>: <a href="https://www.instagram.com/kuh_beer/" target="_self">@kuh_beer</a></p></div></div></div></div></div><div class="pf-c"><div data-pf-type="ContentListItem" class="sc-dFfGgx koQWfm pf-8b2649029fb8-27_ pf-bg-lazy"><div class="sc-jXbVAB kNtuek pf-8b2649029fb8-28_ pf-r pf-r-eh" style="--s-xs:15px" data-pf-type="Row"><div class="pf-c" style="--c-xs:12;--c-sm:12;--c-md:12;--c-lg:12"><div data-pf-type="Column" class="sc-lnPyOc gUmbDa pf-8b2649029fb8-29_"><h3 data-pf-type="Heading2" class="sc-cmaqZA fXrIOS pf-8b2649029fb8-30_ pf-heading-1-h3">Sam Trinity</h3><p class="sc-kAkozD iOjmJ pf-8b2649029fb8-32_ pf-text-1" data-pf-type="Paragraph3">Sam Trinity is a transformational guide, Reiki Master, and hypnotist, empowering others to unlock their potential to heal and awaken their highest selves through breathwork and soulful community experiences. She is widely regarded as one of Toronto's best breathwork facilitators.<br><br><strong>IG</strong>: <a href="https://www.instagram.com/samtrinity333/" target="_self">@samtrinity333</a></p></div></div></div></div></div><div class="pf-c"><div data-pf-type="ContentListItem" class="sc-dFfGgx koQWfm pf-8b2649029fb8-34_ pf-bg-lazy"><div class="sc-jXbVAB kNtuek pf-8b2649029fb8-35_ pf-r pf-r-eh" style="--s-xs:15px" data-pf-type="Row"><div class="pf-c" style="--c-xs:12;--c-sm:12;--c-md:12;--c-lg:12"><div data-pf-type="Column" class="sc-lnPyOc gUmbDa pf-8b2649029fb8-36_"><h3 data-pf-type="Heading2" class="sc-cmaqZA fXrIOS pf-8b2649029fb8-37_ pf-heading-1-h3">Matthew Mariani</h3><p class="sc-kAkozD iOjmJ pf-8b2649029fb8-39_ pf-text-1" data-pf-type="Paragraph3">Matt, a videographer, photographer, and editor with 15 years of experience, is passionate about capturing authenticity and intimate, candid moments with a keen eye for detail, showcasing people and their craft in a way that highlights their true essence.<br><br><strong>IG</strong>: <a href="https://www.instagram.com/mvtt777/" target="_self">@mvtt777</a></p></div></div></div></div></div><div class="pf-c"><div data-pf-type="ContentListItem" class="sc-dFfGgx koQWfm pf-8b2649029fb8-41_ pf-bg-lazy"><div class="sc-jXbVAB kNtuek pf-8b2649029fb8-42_ pf-r pf-r-eh" style="--s-xs:15px" data-pf-type="Row"><div class="pf-c" style="--c-xs:12;--c-sm:12;--c-md:12;--c-lg:12"><div data-pf-type="Column" class="sc-lnPyOc gUmbDa pf-8b2649029fb8-43_"><h3 data-pf-type="Heading2" class="sc-cmaqZA fXrIOS pf-8b2649029fb8-44_ pf-heading-1-h3">Kim Möller</h3><p class="sc-kAkozD iOjmJ pf-8b2649029fb8-46_ pf-text-1" data-pf-type="Paragraph3">Kim is a passionate traveler who discovered cold plunges as a powerful tool for mental clarity and growth.<br><br><strong>IG</strong>: <a href="https://www.instagram.com/kimswm48/" target="_self">@kimswm48</a></p></div></div></div></div></div><div class="pf-c"><div data-pf-type="ContentListItem" class="sc-dFfGgx koQWfm pf-8b2649029fb8-48_ pf-bg-lazy"><div class="sc-jXbVAB kNtuek pf-8b2649029fb8-49_ pf-r pf-r-eh" style="--s-xs:15px" data-pf-type="Row"><div class="pf-c" style="--c-xs:12;--c-sm:12;--c-md:12;--c-lg:12"><div data-pf-type="Column" class="sc-lnPyOc gUmbDa pf-8b2649029fb8-50_"><h3 data-pf-type="Heading2" class="sc-cmaqZA fXrIOS pf-8b2649029fb8-51_ pf-heading-1-h3">Aditya Balaji</h3><p class="sc-kAkozD iOjmJ pf-8b2649029fb8-53_ pf-text-1" data-pf-type="Paragraph3">Aditya Balaji is a versatile storyteller and marketing professional with a passion for connecting people through impactful narratives, meaningful experiences and creative content. He's currently the Event Logistics and Promotion Coordinator for Yes Toronto.<br><br><strong>IG:&nbsp;</strong><a href="https://www.instagram.com/a.b_grapher/" target="_self">@a.b_grapher</a></p></div></div></div></div></div></div></div></div></div></div></div></div><script>
-    !function(){
-      window.__pagefly_section_setting__ = {"pageTitle":"Meet Our Team","pageType":"section","pageId":"8b264902-9fb8-4734-a97b-f65244b440b5","lazyLoad":true,"forceByPassGoogleLightHouse":false,"imageLazyLoad":true,"nativeImageLazyLoad":true,"useThemeJQ":false,"sectionRootType":"Section","trackingIDs":[]};
-      window.__pagefly_setting__&&(window.__pagefly_setting2__=window.__pagefly_setting__),window.__pagefly_setting__={"baseURL":"https://apps.pagefly.io","analyticsURL":"https://analytics.pagefly.io","isBackend":false,"cdnURL":"https://cdn.pagefly.io","pageflyVersion":"4.18.19","shopDomain":"0v11jk-57.myshopify.com","elementData":{},"shopifyProxyPath":"/a/pf_preview"},window.__pagefly_setting2__&&(window.__pagefly_setting__=function _(d,b){let c={...d||{}};for(let a of Object.keys(b))b[a]instanceof Object&&(Array.isArray(b[a])&&c[a]?Object.assign(b[a],[...b[a],...c[a]]):Object.assign(b[a],_(c[a],b[a])));return Object.assign(c||{},b),c}(__pagefly_setting2__,__pagefly_setting__),delete window.__pagefly_setting2__),window.__pagefly_setting__.moneyFormat="${{amount}}"}();
-    </script><script src="https://cdn.pagefly.io/pagefly/4.18.19/core/helper.js" defer></script>
+  <div class="sc-esYjtY fLvWek __pf custom-section">
+    <h3 class="custom-heading">Your Custom Heading</h3>
+    <div class="custom-border-box">
+      <p>This is a placeholder for your custom content. Update this text as needed.</p>
+    </div>
+  </div>
 
+</div>
 
 
 </div><div id="shopify-section-template--23897351192889__slideshow_v2_JEg9V7" class="shopify-section section-slideshow"><link href="cdn/shop/t/4/assets/slideshow-v2%EF%B9%96v=108686809410538463901734517422.css" rel="stylesheet" type="text/css" media="all" />
