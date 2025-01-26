@@ -3112,104 +3112,150 @@ padding-top: 8px;
 </span></div>
   </div></scrolling-banner>
 
-</div><div id="shopify-section-template--23897351192889__pagefly_section_gp86pP" class="shopify-section">
-
-  <!-- PageFlyGlobalSection -->
-
-  <script>
-    window.addEventListener('load', () => {
-      // Ensure gtag is defined before usage
-      if (typeof window.gtag !== 'function') {
-        window.gtag = (event, action, params) => {
-          console.warn('gtag fallback: Event not tracked.', { event, action, params });
-        };
-      }
-    });
-  </script>
-
-  <style>
-    .__pf .pf-c-ct, .__pf .pf-c-lt, .__pf .pf-c-rt {
-      align-content: flex-start;
-    }
-    .__pf .oh, .pf-sr-only {
-      overflow: hidden;
-    }
-    .__pf img, .__pf video {
-      max-width: 100%;
-      border: 0;
-      vertical-align: middle;
-    }
-    .__pf [tabIndex], .__pf button, .__pf input, .__pf select, .__pf textarea {
-      touch-action: manipulation;
-    }
-    .__pf :focus-visible {
-      outline: none !important;
-      box-shadow: none !important;
-    }
-    .__pf *, .__pf :after, .__pf :before {
-      box-sizing: border-box;
-    }
-    .__pf [disabled], .__pf [readonly] {
-      cursor: not-allowed;
-    }
-    .__pf [data-href], .__pf button:not([data-pf-id]):hover {
-      cursor: pointer;
-    }
-    .__pf [hidden] {
-      display: none !important;
-    }
-    .__pf [data-pf-placeholder] {
-      outline: none;
-      height: auto;
-      display: none;
-      pointer-events: none !important;
-    }
-    .main-content {
-      padding: 0;
-    }
-    .footer-section, .site-footer, .site-footer-wrapper, main .accent-background+.shopify-section {
-      margin: 0;
-    }
-    @media (max-width: 767.4999px) {
-      .__pf .pf-hide {
-        display: none !important;
-      }
-    }
-    /* Custom PageFly Enhancements */
-    .custom-heading {
-      font-family: "Jost", sans-serif;
-      font-size: 36px;
-      text-align: center;
-      font-weight: bold;
-      color: #000;
-    }
-    .custom-border-box {
-      border: 1px solid #000;
-      border-radius: 10px;
-      padding: 15px;
-      background-color: rgba(0, 0, 0, 0);
-    }
-    .custom-section {
-      background-color: #fff;
-      border-radius: 15px;
-      padding: 20px;
-      margin: 10px auto;
-    }
-  </style>
-
-  <link rel="stylesheet" href="cdn/shop/t/4/assets/pagefly-animation?v=35569424405882025761734517422.css" media="print" onload="this.media='all'">
-  <link rel="stylesheet" data-pf-font="google" href="../fonts.googleapis.com/css2?family=Jost:wght@400&display=swap" media="all">
-
-  <div class="sc-esYjtY fLvWek __pf custom-section">
-    <h3 class="custom-heading">Your Custom Heading</h3>
-    <div class="custom-border-box">
-      <p>This is a placeholder for your custom content. Update this text as needed.</p>
+<div class="team-section">
+  <h1>Meet Our Dream Team</h1>
+  <div class="team-cards">
+    <div class="team-card">
+      <img src="image1.jpg" alt="Paris Qian" />
+      <div class="card-content">
+        <h2>Paris Qian</h2>
+        <p>
+          Paris is a Breathwork facilitator who transforms emotional barriers 
+          through rhythmic breath, music, and mindful movement, empowering 
+          individuals to achieve inner peace.
+        </p>
+      </div>
+    </div>
+    <div class="team-card">
+      <img src="image2.jpg" alt="Kabir Kapoor" />
+      <div class="card-content">
+        <h2>Kabir Kapoor</h2>
+        <p>
+          Kabir Kapoor is a community leader, public speaker, singer-songwriter, 
+          and traveler. He is the founder of Toronto’s most active community, 
+          Yes Toronto, and a fearless advocate for personal growth.
+        </p>
+      </div>
+    </div>
+    <div class="team-card">
+      <img src="image3.jpg" alt="Sam Trinity" />
+      <div class="card-content">
+        <h2>Sam Trinity</h2>
+        <p>
+          Sam Trinity is a transformational guide, Reiki Master, and hypnotist, 
+          empowering others to unlock their potential and heal through soulful 
+          community experiences.
+        </p>
+      </div>
+    </div>
+    <div class="team-card">
+      <img src="image4.jpg" alt="Liam Clark" />
+      <div class="card-content">
+        <h2>Liam Clark</h2>
+        <p>
+          Liam Clark is a wellness coach and fitness enthusiast who inspires 
+          others to achieve their physical and mental health goals through 
+          customized programs and consistent motivation.
+        </p>
+      </div>
+    </div>
+    <div class="team-card">
+      <img src="image5.jpg" alt="Sophia Martinez" />
+      <div class="card-content">
+        <h2>Sophia Martinez</h2>
+        <p>
+          Sophia is an artist and storyteller who brings joy and creativity to 
+          her community through impactful workshops and visual storytelling that 
+          leaves a lasting impression.
+        </p>
+      </div>
+    </div>
+    <div class="team-card">
+      <img src="image6.jpg" alt="Ethan Rivera" />
+      <div class="card-content">
+        <h2>Ethan Rivera</h2>
+        <p>
+          Ethan Rivera is a tech entrepreneur who empowers individuals and 
+          businesses with innovative solutions and mentorship to achieve 
+          their goals in the digital age.
+        </p>
+      </div>
     </div>
   </div>
-
 </div>
 
+<style>
+  .team-section {
+    text-align: center;
+    font-family: "Arial", sans-serif;
+    padding: 40px 20px;
+    background-color: #fdfdfd;
+  }
 
+  .team-section h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+
+  .team-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .team-card {
+    background-color: #fff;
+    border: 2px solid #10a4b9;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .team-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .team-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 2px solid #10a4b9;
+  }
+
+  .card-content {
+    padding: 20px;
+    text-align: left;
+  }
+
+  .card-content h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #10a4b9;
+    margin-bottom: 10px;
+  }
+
+  .card-content p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+  }
+
+  @media (max-width: 768px) {
+    .team-cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .team-cards {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
 </div><div id="shopify-section-template--23897351192889__slideshow_v2_JEg9V7" class="shopify-section section-slideshow"><link href="cdn/shop/t/4/assets/slideshow-v2%EF%B9%96v=108686809410538463901734517422.css" rel="stylesheet" type="text/css" media="all" />
 
 <div id="section-id-template--23897351192889__slideshow_v2_JEg9V7" data-cc-animate data-cc-animate-delay="0.2s" class="slideshow-v2">
